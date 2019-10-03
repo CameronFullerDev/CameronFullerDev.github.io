@@ -1,1 +1,539 @@
-"Hello world" 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Cameron Fuller
+    </title>
+    <link rel="icon" href="./img/logo.png">
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #282c34;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
+        }
+
+        .title-background {
+            background-color: #484849;
+            padding: 5%;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px rgb(37, 36, 36);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: sticky;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        /* Change the link color to #111 (black) on hover */
+
+        li a:hover {
+            border-color: #FC0E49;
+            border-bottom-color: #FC0E49;
+        }
+
+        .largeText {
+            font-size: 40px;
+        }
+
+        p,
+        h1,
+        li,
+        h2,
+        a {
+            color: ghostwhite;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            opacity: 1;
+            color: #FC0E49;
+            animation: bounce 1s;
+            cursor: pointer;
+        }
+
+        .center {
+            margin: auto;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .contactMe {
+            padding: 10px;
+            text-align: center;
+            vertical-align: center;
+        }
+
+
+
+        .center-text {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .largeBox {
+            padding: 50px;
+            border-radius: 10px;
+            margin: 50px;
+            width: 50%;
+            display: inline-block;
+            background-color: darkgrey;
+            cursor: pointer;
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            opacity: 1;
+            animation: bounce 1s;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        .smallImg {
+            height: 60px;
+            width: 60px;
+            padding: 10px;
+        }
+
+        .contactSection {
+            bottom: -200vh;
+        }
+
+        .contactImg {
+            height: 60px;
+            width: 60px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        .contactImg:hover {
+            animation: bounce 1s;
+        }
+
+
+        .medImg {
+            max-height: 200px;
+            max-width: 300px;
+        }
+
+        .aButton {
+            background-color: #FC0E49;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .aButton:hover {
+            background-color: #484849;
+            color: ghostwhite;
+        }
+
+
+        .profile-picture {
+            height: 30%;
+            width: 30%;
+        }
+
+        .secondary-button {
+            background-color: rgba(61, 59, 60, 0.171);
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+            margin: 50px;
+        }
+
+        .highlightText {
+            color: #FC0E49;
+            font-weight: bold;
+        }
+
+        .highlightText:hover {
+            opacity: 1;
+            animation: bounce 1s;
+        }
+
+        .fade {
+            opacity: 1;
+            animation: fade 5s infinite;
+        }
+
+        .section {
+            height: calc(100vh + 53px);
+            ;
+        }
+
+        hr {
+            animation: grow 2s infinite;
+        }
+
+        @keyframes fade {
+
+            0%,
+            100% {
+                opacity: 0.5
+            }
+
+            50% {
+                opacity: 1
+            }
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+        .area {
+            background: #4e54c8;
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+            width: 100%;
+            height: 100%;
+        }
+
+        .circles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .circles li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .circles li img {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100px;
+            max-height: 150px;
+        }
+
+        .circles li:nth-child(1) {
+            left: 8%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(2) {
+            left: 16%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3) {
+            left: 24%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4) {
+            left: 32%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5) {
+            left: 40%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6) {
+            left: 48%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 6s;
+        }
+
+        .circles li:nth-child(7) {
+            left: 56%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 10s;
+        }
+
+        .circles li:nth-child(8) {
+            left: 64%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9) {
+            left: 72%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10) {
+            left: 80%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 12s;
+            animation-duration: 10s;
+        }
+
+        .circles li:nth-child(11) {
+            left: 84%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 21s;
+        }
+
+        .circles li:nth-child(12) {
+            left: 90%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 20s;
+            animation-duration: 21s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+
+        @-webkit-keyframes bounce {
+
+            from,
+            20%,
+            53%,
+            80%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            40%,
+            43% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate3d(0, -30px, 0);
+                transform: translate3d(0, -30px, 0);
+            }
+
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate3d(0, -15px, 0);
+                transform: translate3d(0, -15px, 0);
+            }
+
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0);
+                transform: translate3d(0, -4px, 0);
+            }
+        }
+
+        @keyframes bounce {
+
+            from,
+            20%,
+            53%,
+            80%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            40%,
+            43% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate3d(0, -30px, 0);
+                transform: translate3d(0, -30px, 0);
+            }
+
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate3d(0, -15px, 0);
+                transform: translate3d(0, -15px, 0);
+            }
+
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0);
+                transform: translate3d(0, -4px, 0);
+            }
+        }
+
+        .bounce {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet" />
+
+
+    <div id="Home" class="section">
+        <div id="main-title" class="center">
+            <div class="center-text title-background">
+                <h1> Hello, </h1>
+                <h1 class="highlightText"> I'm Cameron</h1>
+                <h2> I'm a full-stack developer.</h2>
+                <a href="#about" class="highlightText fade largeText"> 🡣 </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="about" class="section">
+        <div id="about-title" class="center">
+            <h1>About me</h1>
+            <hr />
+
+            <p> I'm a full stack developer working for <a href="http://www.numerous.app/">Numerous international.
+                </a>
+                I have a serious passion
+                for product design, problem solving and creating intelligent, scalable, fast solutions.
+                My hunger for knowledge and determination to turn information into action has contributed to my success
+                at my company, in building exciting new products to quickly impact the target market.</p>
+            <div class="contactSection">
+                <a href="http://github.com/CameronFullerDev"><img class="contactImg" alt="" src="./img/GitHub.png" /></a>
+                <a href="mailto:cameron-fuller@hotmail.com"><img class="contactImg" alt="" src="./img/Email.png" /></a>
+                <a href="https://www.linkedin.com/in/cameron-fuller-455052141/"><img class="contactImg" alt="" src="./img/LinkedIn.png" /></a>
+                <a href="https://www.facebook.com/cameron.philip.steven.fuller"><img class="contactImg" alt="" src="./img/Facebook.png" /></a>
+            </div>
+            <br />
+            <a href="#projects" class="highlightText fade largeText grow"> 🡣 </a>
+        </div>
+
+    </div>
+
+    <div id="projects" class="section">
+        <div id="projects-title" class="center">
+            <h1> Projects </h1>
+            <div>
+                <a href="http://www.devicetrackerplus.com/" class="box">
+                    <img alt="" src="./img/DeviceTrackerPlusLogo.png" />
+                </a>
+                <a href="http://www.motoozo.com/" class="box">
+                    <img alt="" src="./img/MotoozoLogo.png" />
+                </a>
+                <a href="http://numerous.app/" class="box">
+                    <img alt="" src="./img/NumerousLogo.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="area">
+        <ul class="circles">
+            <li><img alt="" src="./img/CSharp.png" /></li>
+            <li><img alt="" src="./img/Javascript.png" /></li>
+            <li><img alt="" src="./img/Node.png" /></li>
+            <li><img alt="" src="./img/Vue.png" /></li>
+            <li><img alt="" src="./img/Azure.png" /></li>
+            <li><img alt="" src="./img/Xamarin.png" /></li>
+            <li><img alt="" src="./img/Twilio.png" /></li>
+            <li><img alt="" src="./img/Angular.png" /></li>
+            <li><img alt="" src="./img/Sql.png" /></li>
+            <li><img alt="" src="./img/Html5.png" /></li>
+            <li><img alt="" src="./img/React.png" /></li>
+            <li><img alt="" src="./img/Css.png" /></li>
+        </ul>
+    </div>
+</body>
+</html>
