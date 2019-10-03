@@ -6,6 +6,7 @@
     <title>
         Cameron Fuller
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/PortfolioIcon.PNG">
     <style type="text/css">
         html {
@@ -29,7 +30,7 @@
 
         .title-background {
             background-color: #484849;
-            padding: 5%;
+            padding: 3%;
             border-radius: 10px;
             box-shadow: 10px 10px 5px rgb(37, 36, 36);
         }
@@ -90,18 +91,11 @@
 
         .center {
             margin: auto;
-            width: 30%;
+            width: 75%;
             padding: 10px;
             text-align: center;
             vertical-align: center;
         }
-
-        .contactMe {
-            padding: 10px;
-            text-align: center;
-            vertical-align: center;
-        }
-
 
 
         .center-text {
@@ -112,15 +106,6 @@
             transform: translate(-50%, -50%);
         }
 
-        .largeBox {
-            padding: 50px;
-            border-radius: 10px;
-            margin: 50px;
-            width: 50%;
-            display: inline-block;
-            background-color: darkgrey;
-            cursor: pointer;
-        }
 
         .box {
             padding: 20px;
@@ -143,10 +128,6 @@
             height: 60px;
             width: 60px;
             padding: 10px;
-        }
-
-        .contactSection {
-            bottom: -200vh;
         }
 
         .contactImg {
@@ -213,7 +194,7 @@
 
         .section {
             height: calc(100vh + 53px);
-            ;
+            padding: 5%;
         }
 
         hr {
@@ -481,42 +462,44 @@
     </div>
 
     <div id="about" class="section">
-        <div id="about-title" class="center">
-            <h1>About me</h1>
-            <hr />
-
+        <h2>About me</h2>
+        <div>
             <p> I'm a full stack developer working for <a href="http://www.numerous.app/">Numerous international.
                 </a>
-                I have a serious passion
-                for product design, problem solving and creating intelligent, scalable, fast solutions.
+                I have a serious passion for product design, problem solving and creating intelligent, scalable, fast
+                solutions.
                 My hunger for knowledge and determination to turn information into action has contributed to my success
                 at my company, in building exciting new products to quickly impact the target market.</p>
+
+
+
+        </div>
+        <div class="center">
             <div class="contactSection">
-                <a href="http://github.com/CameronFullerDev"><img class="contactImg" alt="" src="./img/GitHub.png" /></a>
+                <a href="http://github.com/CameronFullerDev"><img class="contactImg" alt=""
+                        src="./img/GitHub.png" /></a>
                 <a href="mailto:cameron-fuller@hotmail.com"><img class="contactImg" alt="" src="./img/Email.png" /></a>
-                <a href="https://www.linkedin.com/in/cameron-fuller-455052141/"><img class="contactImg" alt="" src="./img/LinkedIn.png" /></a>
-                <a href="https://www.facebook.com/cameron.philip.steven.fuller"><img class="contactImg" alt="" src="./img/Facebook.png" /></a>
+                <a href="https://www.linkedin.com/in/cameron-fuller-455052141/"><img class="contactImg" alt=""
+                        src="./img/LinkedIn.png" /></a>
+                <a href="https://www.facebook.com/cameron.philip.steven.fuller"><img class="contactImg" alt=""
+                        src="./img/Facebook.png" /></a>
             </div>
-            <br />
             <a href="#projects" class="highlightText fade largeText grow"> 🡣 </a>
         </div>
-
     </div>
 
     <div id="projects" class="section">
-        <div id="projects-title" class="center">
-            <h1> Projects </h1>
-            <div>
-                <a href="http://www.devicetrackerplus.com/" class="box">
-                    <img alt="" src="./img/DeviceTrackerPlusLogo.PNG" />
-                </a>
-                <a href="http://www.motoozo.com/" class="box">
-                    <img alt="" src="./img/MotoozoLogo.PNG" />
-                </a>
-                <a href="http://numerous.app/" class="box">
-                    <img alt="" src="./img/NumerousLogo.PNG" />
-                </a>
-            </div>
+        <h1> Projects </h1>
+        <div>
+            <a href="http://www.devicetrackerplus.com/" class="box">
+                Device tracker plus
+            </a>
+            <a href="http://www.motoozo.com/" class="box">
+                Motoozo
+            </a>
+            <a href="http://numerous.app/" class="box">
+                Numerous
+            </a>
         </div>
     </div>
     <div class="area">
@@ -536,4 +519,5 @@
         </ul>
     </div>
 </body>
+
 </html>
