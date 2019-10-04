@@ -24,7 +24,6 @@
             -o-background-size: cover;
             background-size: cover;
             height: 100%;
-            overflow: hidden;
             font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
         }
 
@@ -124,15 +123,9 @@
             border-radius: 10px;
         }
 
-        .smallImg {
-            height: 60px;
-            width: 60px;
-            padding: 10px;
-        }
-
         .contactImg {
-            height: 60px;
-            width: 60px;
+            height: 80px;
+            width: 100px;
             padding: 10px;
             border-radius: 25px;
         }
@@ -141,11 +134,6 @@
             animation: bounce 1s;
         }
 
-
-        .medImg {
-            max-height: 200px;
-            max-width: 300px;
-        }
 
         .aButton {
             background-color: #FC0E49;
@@ -159,23 +147,7 @@
         }
 
 
-        .profile-picture {
-            height: 30%;
-            width: 30%;
-        }
 
-        .secondary-button {
-            background-color: rgba(61, 59, 60, 0.171);
-        }
-
-        .left {
-            float: left;
-        }
-
-        .right {
-            float: right;
-            margin: 50px;
-        }
 
         .highlightText {
             color: #FC0E49;
@@ -444,62 +416,54 @@
 
 
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet" />
 
-
+    <!-- Home -->
     <div id="Home" class="section">
-        <div id="main-title" class="center">
-            <div class="center-text title-background">
-                <h1> Hello, </h1>
-                <h1 class="highlightText"> I'm Cameron</h1>
-                <h2> I'm a full-stack developer.</h2>
-                <a href="#about" class="highlightText fade largeText"> 🡣 </a>
-            </div>
+        <div class="center-text title-background" style="text-align: center">
+            <h1> Hello, </h1>
+            <h1 class="highlightText"> I'm Cameron</h1>
+            <h2> I'm a full-stack developer.</h2>
+            <a href="#about" class="highlightText fade largeText"> 🡣 </a>
         </div>
-
-
-
     </div>
 
+    <!-- About -->
     <div id="about" class="section">
         <h2>About me</h2>
-        <div>
-            <p> I'm a full stack developer working for <a href="http://www.numerous.app/">Numerous Technology.
-                </a>
-                I have a serious passion for product design, problem solving and creating intelligent, scalable, fast
-                solutions.
-                My hunger for knowledge and determination to turn information into action has contributed to my success
-                at my company, in building exciting new products to quickly impact the target market.</p>
-
-
-
-        </div>
+        <p> I'm a full stack developer working for <a href="http://www.numerous.app/">Numerous Technology.</a>
+            I have a serious passion for product design, problem solving and creating intelligent, scalable, fast
+            solutions.
+            My hunger for knowledge and determination to turn information into action has contributed to my success
+            at my company, in building exciting new products to quickly impact the target market.
+        </p>
         <div class="center">
-            <div class="contactSection">
-                <a href="http://github.com/CameronFullerDev"><img class="contactImg" alt=""
-                        src="./img/GitHub.png" /></a>
-                <a href="mailto:cameron-fuller@hotmail.com"><img class="contactImg" alt="" src="./img/Email.png" /></a>
-                <a href="https://www.linkedin.com/in/cameron-fuller-455052141/"><img class="contactImg" alt=""
-                        src="./img/LinkedIn.png" /></a>
-            </div>
+            <a href="http://github.com/CameronFullerDev"><img class="contactImg" alt="" src="./img/GitHub.png" /></a>
+            <a href="mailto:cameron-fuller@hotmail.com"><img class="contactImg" alt="" src="./img/Email.png" /></a>
+            <a href="https://www.linkedin.com/in/cameron-fuller-455052141/"><img class="contactImg" alt=""
+                    src="./img/LinkedIn.png" /></a>
+            <br />
             <a href="#projects" class="highlightText fade largeText grow"> 🡣 </a>
         </div>
     </div>
 
+
+    <!-- Projects -->
     <div id="projects" class="section">
         <h1> Projects </h1>
-        <div>
-            <a href="http://www.devicetrackerplus.com/" class="box">
-                Device tracker plus
-            </a>
-            <a href="http://www.motoozo.com/" class="box">
-                Motoozo
-            </a>
-            <a href="http://numerous.app/" class="box">
-                Numerous
-            </a>
-        </div>
+        <a href="http://www.devicetrackerplus.com/" class="box">
+            Device tracker plus
+        </a>
+        <a href="http://www.motoozo.com/" class="box">
+            Motoozo
+        </a>
+        <a href="http://numerous.app/" class="box">
+            Numerous
+        </a>
     </div>
+
+
+
+    <!-- Main animation -->
     <div class="area">
         <ul class="circles">
             <li><img alt="" src="./img/CSharp.png" /></li>
@@ -517,5 +481,4 @@
         </ul>
     </div>
 </body>
-
 </html>
