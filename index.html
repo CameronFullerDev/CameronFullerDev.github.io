@@ -10,21 +10,13 @@
     <link rel="icon" href="./img/PortfolioIcon.PNG">
     <style type="text/css">
         html {
+            overflow: hidden;
             scroll-behavior: smooth;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
         }
 
         body {
             background-color: #282c34;
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            height: 100%;
-            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
         }
 
         .title-background {
@@ -34,59 +26,10 @@
             box-shadow: 10px 10px 5px rgb(37, 36, 36);
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            position: sticky;
-            bottom: 0;
-            background-color: rgba(255, 255, 255, 0);
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-
-        /* Change the link color to #111 (black) on hover */
-
-        li a:hover {
-            border-color: #FC0E49;
-            border-bottom-color: #FC0E49;
-        }
-
         .largeText {
             font-size: 40px;
         }
 
-        p,
-        h1,
-        li,
-        h2,
-        a {
-            color: ghostwhite;
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            opacity: 1;
-            color: #FC0E49;
-            animation: bounce 1s;
-            cursor: pointer;
-        }
 
         .center {
             margin: auto;
@@ -105,20 +48,6 @@
             transform: translate(-50%, -50%);
         }
 
-
-        .box {
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        .box:hover {
-            opacity: 1;
-            animation: bounce 1s;
-        }
-
         img {
             border-radius: 10px;
         }
@@ -134,29 +63,16 @@
             animation: bounce 1s;
         }
 
-
-        .aButton {
-            background-color: #FC0E49;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .aButton:hover {
-            background-color: #484849;
-            color: ghostwhite;
-        }
-
-
-
-
         .highlightText {
             color: #FC0E49;
             font-weight: bold;
+            text-decoration: none;
         }
 
         .highlightText:hover {
             opacity: 1;
-            animation: bounce 1s;
+            animation: bounce 1s infinite;
+            cursor: pointer;
         }
 
         .fade {
@@ -166,11 +82,14 @@
 
         .section {
             height: calc(100vh + 53px);
-            padding: 5%;
+            color: ghostwhite !important;
         }
 
-        hr {
-            animation: grow 2s infinite;
+        .sectionAlt {
+            height: calc(100vh + 53px);
+            padding: 5%;
+            background-color: ghostwhite;
+            color: #484849 !important;
         }
 
         @keyframes fade {
@@ -185,13 +104,7 @@
             }
         }
 
-        .grow {
-            transition: all .2s ease-in-out;
-        }
 
-        .grow:hover {
-            transform: scale(1.1);
-        }
 
         .area {
             background: #4e54c8;
@@ -423,14 +336,15 @@
             <h1> Hello, </h1>
             <h1 class="highlightText"> I'm Cameron</h1>
             <h2> I'm a full-stack developer.</h2>
-            <a href="#about" class="highlightText fade largeText"> 🡣 </a>
+            <a href="#about" class="highlightText fade largeText"> ⯆ </a>
         </div>
     </div>
 
     <!-- About -->
-    <div id="about" class="section">
+    <div id="about" class="sectionAlt">
         <h2>About me</h2>
-        <p> I'm a full stack developer working for <a href="http://www.numerous.app/">Numerous Technology.</a>
+        <p> I'm a full stack developer working for <a class="highlightText" href="http://www.numerous.app/">Numerous
+                Technology.</a>
             I have a serious passion for product design, problem solving and creating intelligent, scalable, fast
             solutions.
             My hunger for knowledge and determination to turn information into action has contributed to my success
@@ -442,30 +356,50 @@
             <a href="https://www.linkedin.com/in/cameron-fuller-455052141/"><img class="contactImg" alt=""
                     src="./img/LinkedIn.png" /></a>
             <br />
-            <a href="#projects" class="highlightText fade largeText grow"> 🡣 </a>
+            <a href="#skills" class="highlightText fade largeText grow"> ⯆ </a>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="sectionAlt">
+        <h2>Skills</h2>
+        <ul>
+            <li>C#</li>
+            <li>Javascript</li>
+            <li>Node JS</li>
+            <li>Vue JS</li>
+            <li>Azure</li>
+            <li>SQL</li>
+            <li>HTML 5</li>
+            <li>React JS</li>
+            <li>CSS</li>
+
+        </ul>
+        <div class="center">
+            <a href="#projects" class="highlightText fade largeText grow"> ⯆ </a>
         </div>
     </div>
 
 
     <!-- Projects -->
-    <div id="projects" class="section">
+    <div id="projects" class="sectionAlt">
         <h1> Projects </h1>
-        <a href="http://www.devicetrackerplus.com/" class="box">
-            Device tracker plus
-        </a>
-        <a href="http://www.motoozo.com/" class="box">
-            Motoozo
-        </a>
-        <a href="http://numerous.app/" class="box">
-            Numerous
-        </a>
+        <ul>
+            <li>
+                <a href="http://www.devicetrackerplus.com/" class="highlightText"> Device tracker plus</a>
+            </li>
+            <li>
+                <a href="http://www.motoozo.com/" class="highlightText">Motoozo</a>
+            </li>
+            <li>
+                <a href="http://numerous.app/" class="highlightText">Numerous</a>
+            </li>
+        </ul>
     </div>
-
-
 
     <!-- Main animation -->
     <div class="area">
-        <ul class="circles">
+        <ul class="circles main-animation">
             <li><img alt="" src="./img/CSharp.png" /></li>
             <li><img alt="" src="./img/Javascript.png" /></li>
             <li><img alt="" src="./img/Node.png" /></li>
@@ -481,4 +415,5 @@
         </ul>
     </div>
 </body>
+
 </html>
