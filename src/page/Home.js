@@ -7,7 +7,7 @@ import SmallCard from '../component/card/small/SmallCard'
 
 function Home() {
 
-  const text = ["Hello, I'm Cameron", "I'm a developer.", "Nice to meet you."]
+  const text = ["Hello, I'm Cameron.", "I'm a developer.", "Nice to meet you."]
   return (
     <div>
       <DarkBanner Text={text} />

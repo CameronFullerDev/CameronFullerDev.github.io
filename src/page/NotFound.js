@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactRotatingText from 'react-rotating-text'
-import { Container, Row, Col } from 'react-bootstrap'
 import DarkBanner from '../component/banner/dark/DarkBanner';
 
 function NotFound() {
