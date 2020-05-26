@@ -1,0 +1,31 @@
+.small-card {
+    width: '20rem';
+    margin: '12px';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small-card img{
+    height: 25vh;
+    border-bottom: 1px solid lightgray;
+}
+
+.small-card:hover {
+    cursor: pointer;
+
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+
+@-webkit-keyframes bounce { 
+    0% {-webkit-transform: translateY(0);} 
+    100% {-webkit-transform: translateY(-35px);} 
+ } 
+ @keyframes bounce { 
+    0% {-webkit-transform: translateY(0);} 
+    100% {-webkit-transform: translateY(-35px);} 
+ }
+ 
