@@ -11,8 +11,6 @@ import NotFound from './page/NotFound'
 // Components
 import Navbar from './component/navbar/NavBar'
 import Footer from './component/footer/Footer'
-import Skills from './page/Skills';
-import Bio from './page/Bio';
 import Numerous from './page/projects/Numerous';
 import Projects from './page/projects/Projects';
 
