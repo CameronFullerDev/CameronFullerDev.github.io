@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CameronFullerDev/CameronFullerDev.github.io/precache-manifest.c45ec0902e11e351f12ef4679715bb7b.js"
+  "/CameronFullerDev/CameronFullerDev.github.io/precache-manifest.7842908b38528463bfde25c602b575ce.js"
 );
 
 self.addEventListener('message', (event) => {
