@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 class About extends React.Component {
     render() {
         return (
-            <Container fluid className="page">
-                    <Row className="text-center" style={{ padding: "3vh" }}>
-                        <Col>
+            <Container fluid className="page" style={{ padding: "3vh" }}>
+                    <Row className="justify-content-center">
+                        <Col md={6}>
                             <h1>About me</h1>
                         </Col>
                     </Row>
@@ -25,6 +25,19 @@ class About extends React.Component {
                                 </li>
                                 <li>
                                     Front and backend web development
+                                </li>
+                            </ul>
+
+                            <h2>Achievements &amp; qualifications</h2>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youracclaim.com/badges/ee8e1120-348d-47e9-a194-289d109b7651/public_url">MS - Advanced programming in C#</a>
+                                </li>
+                                <li>
+                                    <a href='/'>BCS - Level 4 diploma in software development</a>
+                                </li>
+                                <li>
+                                    <a href='/'>BCS - Level 4 diploma in software development methodologies</a>
                                 </li>
                             </ul>
                         </Col>
