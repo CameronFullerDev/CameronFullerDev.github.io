@@ -12,34 +12,65 @@ class About extends React.Component {
                     </Row>
                     <Row className="justify-content-center">
                         <Col md={6}>
-                            <p>I'm a software developer working for <a href="http://www.numerous.app/">Numerous Technology.</a> I have a serious passion for product design, problem solving and creating intelligent, scalable, fast solutions. My hunger for knowledge and determination to turn information into action has contributed to my success at my company, in building exciting new products to quickly impact the target market.</p>
-                            <p>I am a chronic puzzle-seeker and a lifelong learner. I unpack complicated problems by approaching each with the flexible process and attention it deserves.</p>
+                            <h3>Intro</h3>
+                            <p>
+                                Hi I'm Cameron, I work as a software developer for <a href="http://www.numerous.app/">Numerous Technology. </a> 
+                                Before that, I was a software developer apprentice working on my professional development &amp; qualifications while on the job.
+                                But that's just professionally, I've actually been programming from the age of 11, since the day my Dad challenged me to write a 
+                                program to make a ball bounce on the screen, I've known what I wanted to do with my life, it's engrained in who I am.
+                                I have a passion for product design, problem solving and creating intelligent solutions. My desire for knowledge and determination 
+                                to turn information into action has contributed to my success at my company, in building innovative new products to quickly impact the target market.
+                            </p>
 
-                            <p>This means that I work with others to ask questions, define approaches and execute solutions comprising:</p>
-                            <ul>
-                                <li>
-                                    Strategy
-                                </li>
-                                <li>
-                                    Information architecture
-                                </li>
-                                <li>
-                                    Front and backend web development
-                                </li>
-                            </ul>
+         
+                            
 
-                            <h2>Achievements &amp; qualifications</h2>
-                            <ul>
-                                <li>
-                                    <a href="https://www.youracclaim.com/badges/ee8e1120-348d-47e9-a194-289d109b7651/public_url">MS - Advanced programming in C#</a>
-                                </li>
-                                <li>
-                                    <a href='/'>BCS - Level 4 diploma in software development</a>
-                                </li>
-                                <li>
-                                    <a href='/'>BCS - Level 4 diploma in software development methodologies</a>
-                                </li>
-                            </ul>
+                            <div>
+                                <h3>Achievements &amp; qualifications</h3>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.youracclaim.com/badges/ee8e1120-348d-47e9-a194-289d109b7651/public_url">MS - Advanced programming in C#</a>
+                                    </li>
+                                    <li>
+                                        BCS - Level 4 diploma in software development
+                                    </li>
+                                    <li>
+                                        BCS - Level 4 diploma in software development methodologies
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                            <h3>Courses</h3>
+                                <ul>
+                                    <li>
+                                        App &amp; Web Development Fundamentals
+                                    </li>
+                                    <li>
+                                        Firebrand Scrum Master Training
+                                    </li>
+                                    <li>
+                                        ISTQB Software Testing
+                                    </li>
+                                    <li>
+                                        MCSA SQL Database Development
+                                    </li>
+                                    <li>
+                                        MTA Database Fundamentals
+                                    </li>
+                                    <li>
+                                        Microsoft Advanced Programming in C#
+                                    </li>
+                                    <li>
+                                        Multiple Twilio superclasses
+                                    </li>
+                                    <li>
+                                        Principles of Team Leading <b>(In progress)</b>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
                         </Col>
                     </Row>
             </Container>

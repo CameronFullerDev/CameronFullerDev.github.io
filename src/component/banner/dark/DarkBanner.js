@@ -8,8 +8,8 @@ function DarkBanner(props) {
     return (
         <Container fluid className="banner dark-bg page">
             <Row className="justify-content-center">
-                <Col md={3} style={{ position: "relative", bottom: "-27vh", color: "white" }}>
-                    <h1><ReactRotatingText items={props.Text} /></h1>
+                <Col md={4} style={{ position: "relative", bottom: "-30vh", color: "white"}}>
+                    <h1 className="text-center"><ReactRotatingText items={props.Text} /></h1>
                 </Col>
             </Row>
         </Container>
