@@ -12,14 +12,13 @@ function NavBar() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav>
                     <Nav.Link href="mailto:cameron-fuller@hotmail.com?subject=Let's%20talk"><span >Contact</span></Nav.Link>
-                    <NavDropdown  title="About" id="collasible-nav-dropdown">
+                    <Nav.Link href="about"><span >About</span></Nav.Link>
+                    <NavDropdown  title="Work" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="projects">Projects</NavDropdown.Item>
-                        <NavDropdown.Item href="skills">Skills</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
-        </Navbar>
-        
+        </Navbar>       
     )
 }
 

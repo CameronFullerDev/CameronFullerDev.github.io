@@ -1,8 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import './LightBanner.css'
-import SmallCard from '../../card/small/SmallCard'
-
 
 function LightBanner(props) {
     return (
