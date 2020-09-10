@@ -12,7 +12,6 @@ class About extends React.Component {
                     </Row>
                     <Row className="justify-content-center">
                         <Col md={6}>
-                            <h3>Intro</h3>
                             <p>
                                 Hi I'm Cameron, I work as a software developer for <a href="http://www.numerous.app/">Numerous Technology. </a> 
                                 Before that, I was a software developer apprentice working on my professional development &amp; qualifications while on the job.
@@ -64,7 +63,7 @@ class About extends React.Component {
                                         Multiple Twilio superclasses
                                     </li>
                                     <li>
-                                        Principles of Team Leading <b>(In progress)</b>
+                                        Principles of Team Leading
                                     </li>
                                 </ul>
                             </div>
