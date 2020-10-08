@@ -13,19 +13,72 @@ class About extends React.Component {
                     <Row className="justify-content-center">
                         <Col md={6}>
                             <p>
-                                Hi I'm Cameron, I work as a software developer for <a href="http://www.numerous.app/">Numerous Technology. </a> 
+                                Hi I'm Cameron, I work as a full stack software developer for <a href="http://www.numerous.app/">Numerous Technology. </a> 
                                 Before that, I was a software developer apprentice working on my professional development &amp; qualifications while on the job.
-                                But that's just professionally, I've actually been programming from the age of 11, since the day my Dad challenged me to write a 
-                                program to make a ball bounce on the screen, I've known what I wanted to do with my life, it's engrained in who I am.
-                                I have a passion for product design, problem solving and creating intelligent solutions. My desire for knowledge and determination 
-                                to turn information into action has contributed to my success at my company, in building innovative new products to quickly impact the target market.
+                                But that's just professionally, I've actually been programming from the age of 11. I have a passion for product design, problem solving and creating intelligent solutions. 
+                                My desire for knowledge and determination to turn information into action has contributed to my success at my company, in building innovative new products to quickly impact the target market.
                             </p>
 
-         
+                            <h3>Skills &amp; Technologies</h3>
+                            <Row>
+                            <Col md={6}>
+                                <ul>
+                                    <li>
+                                        Dotnet
+                                    </li>
+                                    <li>
+                                        C#
+                                    </li>
+                                    <li>
+                                        SQL
+                                    </li>
+                                    <li>
+                                        Transact SQL
+                                    </li>
+                                    <li>
+                                        Python
+                                    </li>
+                                    <li>
+                                        HTML
+                                    </li>
+                                    <li>
+                                        Javascript
+                                    </li>
+                                </ul>
+                            </Col>
+                            <Col md={6}>
+                                <ul>
+                                <li>
+                                        Xamarin Forms
+                                    </li>
+                                    <li>
+                                        Microsoft Azure
+                                    </li>
+                                    <li>
+                                        Machine learning
+                                    </li>
+                                    <li>
+                                        Scrum
+                                    </li>
+                                    <li>
+                                        REST
+                                    </li>
+                                    <li>
+                                        Vue JS
+                                    </li>
+                                    <li>
+                                        React JS
+                                    </li>
+                                    <li>
+                                        Angular 4
+                                    </li>
+                                </ul>
+                            </Col>
+                            </Row>
                             
 
                             <div>
-                                <h3>Achievements &amp; qualifications</h3>
+                                <h3>Qualifications</h3>
                                 <ul>
                                     <li>
                                         <a href="https://www.youracclaim.com/badges/ee8e1120-348d-47e9-a194-289d109b7651/public_url">MS - Advanced programming in C#</a>
@@ -35,6 +88,9 @@ class About extends React.Component {
                                     </li>
                                     <li>
                                         BCS - Level 4 diploma in software development methodologies
+                                    </li>
+                                    <li>
+                                        TQUK - Principles of Team Leading
                                     </li>
                                 </ul>
                             </div>
@@ -61,9 +117,6 @@ class About extends React.Component {
                                     </li>
                                     <li>
                                         Multiple Twilio superclasses
-                                    </li>
-                                    <li>
-                                        Principles of Team Leading
                                     </li>
                                 </ul>
                             </div>

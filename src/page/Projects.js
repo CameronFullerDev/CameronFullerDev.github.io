@@ -25,8 +25,8 @@ function Projects() {
           <Card.Body>
             <Card.Title>Payment Help</Card.Title>
             <Card.Text>
-              Payment Help provides payment support services to customers for a range of products, including Device Tracker Plus and Blokkr.
-            </Card.Text>
+              Payment help provides payment support services to merchants to help manage charge backs &amp; disputes            
+              </Card.Text>
             <SocialIcon url="https://www.paymenthelp.org/" />
           </Card.Body>
           <Card.Footer>
@@ -60,17 +60,6 @@ function Projects() {
         </Card>
         <Card>
           <Card.Body>
-            <Card.Title>YoRecipe</Card.Title>
-            <Card.Text>
-              (Coming soon)
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Backend, frontend &amp; mobile.</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Body>
             <Card.Title>My website</Card.Title>
             <Card.Text>
               This website was created using React JS, it's hosted with github pages. The idea was to create a simple, clean site where I can post my projects, bit's about me &amp; build on my knowledge of React JS.
@@ -93,17 +82,6 @@ function Projects() {
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">Mobile.</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Title>Roam</Card.Title>
-            <Card.Text>
-              (Coming soon)
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Backend, frontend &amp; mobile.</small>
           </Card.Footer>
         </Card>
       </CardColumns>
