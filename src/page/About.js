@@ -1,133 +1,85 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import ItemList from "../component/util/ItemList";
+import ExperienceEntry from "../component/util/ExperienceEntry";
+import {
+  summary,
+  numSkillColumns,
+  itemsPerColumn,
+  skills,
+  experiences,
+  qualifications,
+  additionalCourses,
+} from "../content/About";
 
 class About extends React.Component {
-    render() {
-        return (
-            <Container fluid className="page" style={{ padding: "3vh" }}>
-                    <Row className="justify-content-center">
-                        <Col md={6}>
-                            <h1>About me</h1>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-center">
-                        <Col md={6}>
-                            <p>
-                                Hi I'm Cameron, I work as a full stack software developer for <a href="http://www.numerous.app/">Numerous Technology. </a> 
-                                Before that, I was a software developer apprentice working on my professional development &amp; qualifications while on the job.
-                                But that's just professionally, I've actually been programming from the age of 11. I have a passion for product design, problem solving and creating intelligent solutions. 
-                                My desire for knowledge and determination to turn information into action has contributed to my success at my company, in building innovative new products to quickly impact the target market.
-                            </p>
+  render() {
+    return (
+      <Container fluid className="page" style={{ padding: "3vh" }}>
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <h3>Summary</h3>
+            <p>{summary}</p>
+          </Col>
+        </Row>
 
-                            <h3>Skills &amp; Technologies</h3>
-                            <Row>
-                            <Col md={6}>
-                                <ul>
-                                    <li>
-                                        Dotnet
-                                    </li>
-                                    <li>
-                                        C#
-                                    </li>
-                                    <li>
-                                        SQL
-                                    </li>
-                                    <li>
-                                        Transact SQL
-                                    </li>
-                                    <li>
-                                        Python
-                                    </li>
-                                    <li>
-                                        HTML
-                                    </li>
-                                    <li>
-                                        Javascript
-                                    </li>
-                                </ul>
-                            </Col>
-                            <Col md={6}>
-                                <ul>
-                                <li>
-                                        Xamarin Forms
-                                    </li>
-                                    <li>
-                                        Microsoft Azure
-                                    </li>
-                                    <li>
-                                        Machine learning
-                                    </li>
-                                    <li>
-                                        Scrum
-                                    </li>
-                                    <li>
-                                        REST
-                                    </li>
-                                    <li>
-                                        Vue JS
-                                    </li>
-                                    <li>
-                                        React JS
-                                    </li>
-                                    <li>
-                                        Angular 4
-                                    </li>
-                                </ul>
-                            </Col>
-                            </Row>
-                            
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <h3>Skills</h3>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          {[...Array(numSkillColumns)].map((_, columnIndex) => (
+            <Col md={6 / numSkillColumns} key={columnIndex}>
+              <ItemList
+                items={skills.slice(
+                  columnIndex * itemsPerColumn,
+                  (columnIndex + 1) * itemsPerColumn
+                )}
+              />
+            </Col>
+          ))}
+        </Row>
 
-                            <div>
-                                <h3>Qualifications</h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.youracclaim.com/badges/ee8e1120-348d-47e9-a194-289d109b7651/public_url">MS - Advanced programming in C#</a>
-                                    </li>
-                                    <li>
-                                        BCS - Level 4 diploma in software development
-                                    </li>
-                                    <li>
-                                        BCS - Level 4 diploma in software development methodologies
-                                    </li>
-                                    <li>
-                                        TQUK - Principles of Team Leading
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                            <h3>Courses</h3>
-                                <ul>
-                                    <li>
-                                        App &amp; Web Development Fundamentals
-                                    </li>
-                                    <li>
-                                        Firebrand Scrum Master Training
-                                    </li>
-                                    <li>
-                                        ISTQB Software Testing
-                                    </li>
-                                    <li>
-                                        MCSA SQL Database Development
-                                    </li>
-                                    <li>
-                                        MTA Database Fundamentals
-                                    </li>
-                                    <li>
-                                        Microsoft Advanced Programming in C#
-                                    </li>
-                                    <li>
-                                        Multiple Twilio superclasses
-                                    </li>
-                                </ul>
-                            </div>
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <h3>Experience</h3>
+            {experiences.map((experience, index) => (
+              <ExperienceEntry key={index} experience={experience} />
+            ))}
+          </Col>
+        </Row>
 
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <h3>Professional Qualifications</h3>
+            <ul>
+              {qualifications.map((qualification, index) => (
+                <li key={index}>{qualification}</li>
+              ))}
+            </ul>
+          </Col>
+        </Row>
 
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <h3>Additional Courses</h3>
+            <ul>
+              {additionalCourses.map((course, index) => (
+                <li key={index}>{course}</li>
+              ))}
+            </ul>
+          </Col>
+        </Row>
 
-                        </Col>
-                    </Row>
-            </Container>
-        );
-    }
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <p>Additional information & references available on request.</p>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default About;
