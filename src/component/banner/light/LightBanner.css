@@ -1,5 +1,5 @@
-.light-bg{
-    background-size: cover;
-    background-color: white; /* For browsers that do not support gradients */
-    color: darkgray;
-  }
+.light-bg {
+  background-size: cover;
+  background-color: white; /* For browsers that do not support gradients */
+  color: darkgray;
+}
