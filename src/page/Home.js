@@ -5,7 +5,7 @@ function Home() {
     "Hello, I'm Cameron.",
     "I'm a software engineer.",
     "Nice to meet you.",
-    "Let's connect and discuss your projects.",
+    "Let's connect.",
   ];
 
   return (

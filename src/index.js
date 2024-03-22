@@ -8,7 +8,7 @@ import "./index.css";
 import Home from "./page/Home";
 import About from "./page/About";
 import NotFound from "./page/NotFound";
-import Projects from "./page/Projects";
+import Portfolio from "./page/Portfolio";
 
 // Components
 import Navbar from "./component/navbar/NavBar";
@@ -21,7 +21,7 @@ const routing = (
       <Route exact path="/" component={Home} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/Portfolio" component={Portfolio} />
 
       <Route exact path="*" component={NotFound} />
     </Switch>

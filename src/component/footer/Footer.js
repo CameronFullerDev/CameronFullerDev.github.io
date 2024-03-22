@@ -11,6 +11,10 @@ function Footer() {
         className="social-icon"
         url="https://www.linkedin.com/in/cameron-fuller-455052141/"
       />
+      <SocialIcon
+        className="social-icon"
+        url="mailto:cameron-fuller@hotmail.com"
+      />
     </Navbar>
   );
 }

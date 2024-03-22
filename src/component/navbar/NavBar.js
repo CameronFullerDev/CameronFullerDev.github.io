@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
 
+import cv from "../../assets/CameronFullerCV.pdf";
+
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="nav">
@@ -18,11 +20,11 @@ function NavBar() {
           <Nav.Link href="about">
             <span>About</span>
           </Nav.Link>
-          <Nav.Link href="projects">
-            <span>Projects</span>
+          <Nav.Link href="portfolio">
+            <span>Portfolio</span>
           </Nav.Link>
-          <Nav.Link href="mailto:cameron-fuller@hotmail.com?subject=Let's%20talk">
-            <span>Contact</span>
+          <Nav.Link href={cv} download="CameronFullerCV.pdf">
+            <span>CV</span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

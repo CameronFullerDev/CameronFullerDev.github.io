@@ -12,6 +12,8 @@ import {
   additionalCourses,
 } from "../content/About";
 
+import cv from "../assets/CameronFullerCV.pdf";
+
 class About extends React.Component {
   render() {
     return (
@@ -75,6 +77,9 @@ class About extends React.Component {
         <Row className="justify-content-center">
           <Col md={6}>
             <p>Additional information & references available on request.</p>
+            <a href={cv} download="CameronFullerCV.pdf">
+              Download My CV Here
+            </a>
           </Col>
         </Row>
       </Container>

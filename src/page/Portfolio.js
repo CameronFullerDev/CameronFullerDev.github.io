@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, CardColumns } from "react-bootstrap";
 import ProjectCard from "../component/card/ProjectCard";
-import projects from "../content/Projects";
+import projects from "../content/Portfolio";
 
 function Projects() {
   return (
