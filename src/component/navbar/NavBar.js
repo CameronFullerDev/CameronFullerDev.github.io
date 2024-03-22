@@ -23,7 +23,11 @@ function NavBar() {
           <Nav.Link href="portfolio" aria-label="portfolio">
             <span>Portfolio</span>
           </Nav.Link>
-          <Nav.Link href={cv} download="CameronFullerCV.pdf" aria-label="Download my CV">
+          <Nav.Link
+            href={cv}
+            download="CameronFullerCV.pdf"
+            aria-label="Download my CV"
+          >
             <span>CV</span>
           </Nav.Link>
         </Nav>
