@@ -34,7 +34,7 @@ class About extends React.Component {
               <ItemList
                 items={skills.slice(
                   columnIndex * itemsPerColumn,
-                  (columnIndex + 1) * itemsPerColumn
+                  (columnIndex + 1) * itemsPerColumn,
                 )}
               />
             </Col>

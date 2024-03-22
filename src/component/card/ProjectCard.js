@@ -5,7 +5,11 @@ import { SocialIcon } from "react-social-icons";
 const ProjectCard = ({ img, title, description, urls }) => (
   <Card>
     <Card.Body>
-      <Card.Img src={img} style={{ maxWidth: "6vh", maxheight: "5vh", marginBottom: "2vh" }} alt="" />
+      <Card.Img
+        src={img}
+        style={{ maxWidth: "6vh", maxheight: "5vh", marginBottom: "2vh" }}
+        alt=""
+      />
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
       {urls.map((url, index) => (
