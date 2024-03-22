@@ -1,12 +1,22 @@
 .dark-bg {
   background-color: #005daf; /* For browsers that do not support gradients */
   background-size: cover;
-  background: linear-gradient(270deg, #053864, #005daf, #f55d72, #df598a);
+  background: linear-gradient(270deg,#1e90ff, #3d85c6, #2c7bb6, #0078d4, #4682b4, #357ebd);
   background-size: 800% 800%;
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
 }
+
+
+#003366, #005a8c, #003f65, #00294d, #004080, #001a33
+
+#0077be
+#ff6f61
+#8b5d2e
+#77ab59
+#ff4500
+#6a0572
 
 .typewriter h1 {
   text-align: center;
@@ -16,7 +26,7 @@
   letter-spacing: 0.15em; /* Adjust as needed */
   white-space: nowrap;
   animation:
-    typing 3.5s steps(40, end),
+    typing 5s steps(40, end),
     blink-caret 0.75s step-end infinite;
 }
 
