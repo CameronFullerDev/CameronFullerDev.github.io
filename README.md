@@ -28,9 +28,9 @@ To run the website locally on your machine, follow these steps:
 To deploy the website, follow these steps:
 
 1. Ensure that you have committed all your changes to the repository.
-2. Run the following command to build the production-ready version of the website:
-3. After the build process is complete, deploy the website using the following command:
-4. Your website will be deployed to the specified homepage URL.
+2. Run the following command to build the production-ready version of the website: `npm run build`
+3. After the build process is complete, deploy the website using the following command: `npm run deploy`
+4. Your website will be deployed using github pages.
 
 ## Scripts
 
