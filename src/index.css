@@ -1,81 +1,115 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Add the Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Rest of your CSS remains unchanged */
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-.banner {
-  min-height: 85vh;
-  overflow-x: hidden;
-  padding: 0;
-  width: 100%;
+.container-fluid {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 
-.page {
-  min-height: 85vh;
-  width: 100%;
-  overflow-y: hidden;
-}
-
-.small-card {
+.footer,
+.nav {
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: bounce-down;
-  animation-name: bounce-down;
-  -webkit-animation-duration: 1.3s;
-  animation-duration: 1.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 
-.small-card:hover {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-duration: 1.3s;
-  animation-duration: 1.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-20px);
-  }
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
+
+.banner {
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  height: 95vh;
+}
+
+.social-icon {
+  margin-left: 5px;
+}
+.light-bg {
+  background-color: white; /* For browsers that do not support gradients */
+  color: darkgray;
+}
+
+.dark-bg {
+  background: linear-gradient(
+    270deg,
+    #1e90ff,
+    #3d85c6,
+    #2c7bb6,
+    #0078d4,
+    #4682b4,
+    #357ebd
+  );
+  background-size: cover;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+.typewriter h1 {
+  text-align: center;
+  margin-left: 20px;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  animation:
+    typing 5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  100% {
-    -webkit-transform: translateY(-20px);
+  to {
+    width: 100%;
   }
 }
 
-@-webkit-keyframes bounce-down {
-  100% {
-    -webkit-transform: translateY(0);
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  0% {
-    -webkit-transform: translateY(-20px);
+  50% {
+    border-color: white;
   }
 }
-@keyframes bounce-down {
-  100% {
-    -webkit-transform: translateY(0);
-  }
+
+@keyframes WaveBackground {
   0% {
-    -webkit-transform: translateY(-20px);
+    background-position: 37% 50%;
+  }
+  50% {
+    background-position: 64% 50%;
+  }
+  100% {
+    background-position: 37% 50%;
   }
 }

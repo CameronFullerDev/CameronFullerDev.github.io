@@ -1,22 +1,17 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import "./NavBar.css";
 
-import cv from "../../assets/CameronFullerCV.pdf";
+import cv from "../assets/CameronFullerCV.pdf";
 
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="nav">
-      <Navbar.Brand href="/" aria-label="Home">
-        <img
-          src={require("../../assets/logo.png")}
-          style={{ height: "3.5vh" }}
-          alt=""
-        />
-      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse>
         <Nav>
+          <Nav.Link href="/" aria-label="home">
+            <span>Home</span>
+          </Nav.Link>
           <Nav.Link href="about" aria-label="about">
             <span>About</span>
           </Nav.Link>

@@ -1,11 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Jumbotron, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ReactRotatingText from "react-rotating-text";
-import "./DarkBanner.css";
 
 function DarkBanner(props) {
   return (
-    <Container fluid className="banner dark-bg page">
+    <Container fluid className="banner dark-bg">
       <Row className="justify-content-center">
         <Col
           md={4}

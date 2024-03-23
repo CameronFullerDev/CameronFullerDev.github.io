@@ -7,7 +7,7 @@ const ProjectCard = ({ img, title, description, urls }) => (
     <Card.Body>
       <Card.Img
         src={img}
-        style={{ maxWidth: "6vh", maxheight: "5vh", marginBottom: "2vh" }}
+        style={{ maxWidth: "60px", maxheight: "60px", marginBottom: "2vh" }}
         alt=""
       />
       <Card.Title>{title}</Card.Title>

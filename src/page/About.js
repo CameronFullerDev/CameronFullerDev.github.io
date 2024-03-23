@@ -1,23 +1,23 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ItemList from "../component/util/ItemList";
-import ExperienceEntry from "../component/util/ExperienceEntry";
-import {
-  summary,
-  numSkillColumns,
-  itemsPerColumn,
-  skills,
-  experiences,
-  qualifications,
-  additionalCourses,
-} from "../content/About";
+import ItemList from "../component/ItemList";
+import ExperienceEntry from "../component/ExperienceEntry";
+
+import { summary } from "../content/about/Summary";
+import { skills } from "../content/about/Skills";
+import { experiences } from "../content/about/Experiences";
+import { qualifications } from "../content/about/Qualifications";
+import { additionalCourses } from "../content/about/AdditionalCourses";
 
 import cv from "../assets/CameronFullerCV.pdf";
+
+const numSkillColumns = 3;
+const itemsPerSkillColumn = Math.ceil(skills.length / numSkillColumns);
 
 class About extends React.Component {
   render() {
     return (
-      <Container fluid className="page" style={{ padding: "3vh" }}>
+      <Container fluid>
         <Row className="justify-content-center">
           <Col md={6}>
             <h3>Summary</h3>
@@ -35,8 +35,8 @@ class About extends React.Component {
             <Col md={6 / numSkillColumns} key={columnIndex}>
               <ItemList
                 items={skills.slice(
-                  columnIndex * itemsPerColumn,
-                  (columnIndex + 1) * itemsPerColumn,
+                  columnIndex * itemsPerSkillColumn,
+                  (columnIndex + 1) * itemsPerSkillColumn,
                 )}
               />
             </Col>

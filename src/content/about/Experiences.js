@@ -1,24 +1,3 @@
-const skills = [
-  "C#",
-  ".NET",
-  "Vue JS",
-  "Azure",
-  "SQL",
-  "Entity Framework",
-  "Microservices",
-  "RESTful APIs",
-  "DevOps",
-  "Agile methodologies",
-  "CI/CD pipelines",
-  "CQRS",
-  "Docker",
-  "Terraform",
-  "Kubernetes",
-];
-
-const numSkillColumns = 3; // Set the number of columns here
-const itemsPerColumn = Math.ceil(skills.length / numSkillColumns);
-
 const experiences = [
   {
     title: "Senior Lead Software Engineer",
@@ -97,32 +76,4 @@ const experiences = [
   },
 ];
 
-const qualifications = [
-  "Microsoft - Advanced programming in C#",
-  "BCS - Level 4 diploma in software development",
-  "BCS - Level 4 diploma in software development methodologies",
-  "TQUK - Principles of Team Leading",
-];
-
-const additionalCourses = [
-  "App & Web Development Fundamentals",
-  "Firebrand SCRUM master training",
-  "ISTQB Software Testing",
-  "MCSA Database fundamentals",
-  "Microsoft Advanced Programming in C#",
-  "TQUK - Principles of team leading",
-  "Multiple Twilio superclasses",
-];
-
-const summary =
-  "Experienced software engineer with expertise in full-stack development using the .NET stack, Vue JS, and Microsoft Azure. Passionate about solving complex problems and delivering efficient, user-centric software solutions. Always seeking new opportunities for personal development and to make a difference in the companies I work for.";
-
-export {
-  skills,
-  numSkillColumns,
-  itemsPerColumn,
-  experiences,
-  qualifications,
-  additionalCourses,
-  summary,
-};
+export { experiences };

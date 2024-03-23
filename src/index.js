@@ -11,21 +11,25 @@ import NotFound from "./page/NotFound";
 import Portfolio from "./page/Portfolio";
 
 // Components
-import Navbar from "./component/navbar/NavBar";
-import Footer from "./component/footer/Footer";
+import Navbar from "./component/NavBar";
+import Footer from "./component/Footer";
 
 const routing = (
   <Router>
-    <Navbar />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/home" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/Portfolio" component={Portfolio} />
+    <div className="page-container">
+      <Navbar />
+      <div className="content-wrap">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/Portfolio" component={Portfolio} />
 
-      <Route exact path="*" component={NotFound} />
-    </Switch>
-    <Footer />
+          <Route exact path="*" component={NotFound} />
+        </Switch>
+      </div>
+
+      <Footer />
+    </div>
   </Router>
 );
 

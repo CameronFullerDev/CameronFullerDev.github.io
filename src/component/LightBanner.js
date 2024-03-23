@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import "./LightBanner.css";
-
 function LightBanner(props) {
   return (
     <Container fluid className="banner light-bg">

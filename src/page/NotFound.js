@@ -1,5 +1,5 @@
 import React from "react";
-import DarkBanner from "../component/banner/dark/DarkBanner";
+import DarkBanner from "../component/DarkBanner";
 
 function NotFound() {
   const text = [

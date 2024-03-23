@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
-import "./Footer.css";
 
 function Footer() {
   return (
