@@ -1,12 +1,12 @@
 import React from "react";
-import DarkBanner from "../component/DarkBanner";
+import ContentBanner from "../component/ContentBanner";
 
 function NotFound() {
   const text = [
     "Error code: 404",
     "Sorry, looks like the page you were looking for doesn't exist.",
   ];
-  return <DarkBanner Text={text} />;
+  return <ContentBanner Text={text} />;
 }
 
 export default NotFound;
