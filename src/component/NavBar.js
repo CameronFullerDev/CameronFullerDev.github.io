@@ -19,6 +19,7 @@ function NavBar() {
       expand="lg"
       sticky="top"
       style={{ color: theme === "light" ? "#000000" : "#ffffff" }}
+      className="nav"
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
