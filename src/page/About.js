@@ -17,7 +17,7 @@ const itemsPerSkillColumn = Math.ceil(skills.length / numSkillColumns);
 class About extends React.Component {
   render() {
     return (
-      <div className="py-2">
+      <div className="py-2 px-2">
         <Row className="justify-content-center">
           <Col md={6}>
             <h3>Summary</h3>
