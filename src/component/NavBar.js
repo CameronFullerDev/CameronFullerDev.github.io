@@ -1,11 +1,25 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Button, Form } from "react-bootstrap";
 
 import cv from "../assets/CameronFullerCV.pdf";
+import { useTheme } from "../contexts/ThemeContext";
 
 function NavBar() {
+  const { theme, setTheme } = useTheme();
+
+  const themeSwitcherVariant = {
+    light: "outline-primary",
+    dark: "outline-light",
+  };
+
   return (
-    <Navbar bg="light" expand="lg" sticky="top" className="nav">
+    <Navbar
+      bg={theme}
+      variant={theme}
+      expand="lg"
+      sticky="top"
+      style={{ color: theme === "light" ? "#000000" : "#ffffff" }}
+    >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
         <Nav>
@@ -27,6 +41,13 @@ function NavBar() {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
+
+      <Button
+        variant={themeSwitcherVariant[theme]}
+        onClick={() => setTheme(theme)}
+      >
+        Swap to {theme === "light" ? "dark" : "light"} mode
+      </Button>
     </Navbar>
   );
 }

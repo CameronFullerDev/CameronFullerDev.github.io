@@ -1,5 +1,5 @@
 import React from "react";
-import DarkBanner from "../component/DarkBanner";
+import ContentBanner from "../component/ContentBanner";
 function Home() {
   const text = [
     "Hello, I'm Cameron.",
@@ -8,7 +8,7 @@ function Home() {
     "Let's connect.",
   ];
 
-  return <DarkBanner Text={text} />;
+  return <ContentBanner Text={text} />;
 }
 
 export default Home;
