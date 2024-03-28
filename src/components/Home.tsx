@@ -1,5 +1,5 @@
-import React from "react";
-import ContentBanner from "../component/ContentBanner";
+import ReactRotatingText from "react-rotating-text";
+
 function Home() {
   const text = [
     "Hello, I'm Cameron.",
@@ -8,7 +8,11 @@ function Home() {
     "Let's connect.",
   ];
 
-  return <ContentBanner Text={text} />;
+  return (
+    <div className="banner">
+      <ReactRotatingText items={text} />
+    </div>
+  );
 }
 
 export default Home;

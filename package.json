@@ -4,18 +4,26 @@
   "private": true,
   "homepage": "https://cameron-fuller.com",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.5.0",
-    "gh-pages": "^2.2.0",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.91",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-rotating-text": "^1.4.1",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.1",
-    "react-social-icons": "^4.1.0"
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,10 +32,13 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md|ts|tsx)\""
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -40,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "prettier": "3.2.5"
   }
 }
