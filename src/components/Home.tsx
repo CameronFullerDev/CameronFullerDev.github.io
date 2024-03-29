@@ -20,6 +20,10 @@ const BannerContainer = styled("div")({
       background: "linear-gradient(to right, #ff7e5f, #feb47b)",
     },
   },
+  "@media (max-width: 600px)": {
+    // Adjust height for mobile screens
+    height: "calc(100vh - 112px)",
+  },
 });
 
 const RotatingText = styled(Typography)({
