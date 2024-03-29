@@ -1,7 +1,6 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
@@ -10,8 +9,9 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import DarkModeToggle from "./common/DarkModeToggle";
+import { Button } from "@mui/material";
 
 const drawerWidth = 240;
 const navItems = [
@@ -50,13 +50,13 @@ function Navbar() {
             </ListItemButton>
           </ListItem>
         ))}
+        <DarkModeToggle />
       </List>
     </Box>
   );
 
   return (
     <Box sx={{ display: "flex" }}>
-      <CssBaseline />
       <AppBar component="nav" position="sticky">
         <Toolbar>
           <IconButton
@@ -71,13 +71,16 @@ function Navbar() {
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
+                color="secondary"
+                variant="text"
                 key={item.name}
-                sx={{ color: "#fff" }}
                 onClick={() => navigate(item.route)}
               >
                 {item.name}
               </Button>
             ))}
+
+            <DarkModeToggle />
           </Box>
         </Toolbar>
       </AppBar>
