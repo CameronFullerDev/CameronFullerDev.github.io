@@ -21,11 +21,13 @@ export function Profile() {
 
   return (
     <ProfileWrapper>
-      <PaperStyled elevation={3}>
+      <PaperStyled elevation={0}>
         <Typography variant="h5" gutterBottom>
           Summary
         </Typography>
-        <Typography variant="body1">{summary}</Typography>
+        <Typography variant="body1" gutterBottom>
+          {summary}
+        </Typography>
         <Typography variant="h5" gutterBottom>
           Skills
         </Typography>

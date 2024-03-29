@@ -1,4 +1,3 @@
-import React from "react";
 import ReactRotatingText from "react-rotating-text";
 import { styled } from "@mui/system";
 import Typography from "@mui/material/Typography";
@@ -7,25 +6,27 @@ const BannerContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "calc(100vh - 128px)", // Adjust this value according to your needs
-  animation: "$backgroundAnimation 10s infinite alternate", // Apply animation
-  background: "linear-gradient(to right, #ff7e5f, #feb47b)", // Initial background color
+  height: "calc(100vh - 128px)",
+  animation: "$backgroundAnimation 10s infinite alternate",
+  background: "linear-gradient(to right, #ff7e5f, #feb47b)",
   "@keyframes backgroundAnimation": {
     "0%": {
-      background: "linear-gradient(to right, #ff7e5f, #feb47b)", // Initial color
+      background: "linear-gradient(to right, #ff7e5f, #feb47b)",
     },
     "50%": {
-      background: "linear-gradient(to right, #74ebd5, #9face6)", // Intermediate color
+      background: "linear-gradient(to right, #74ebd5, #9face6)",
     },
     "100%": {
-      background: "linear-gradient(to right, #ff7e5f, #feb47b)", // Final color
+      background: "linear-gradient(to right, #ff7e5f, #feb47b)",
     },
   },
 });
 
 const RotatingText = styled(Typography)({
-  fontSize: "2rem", // Adjust font size as needed
-  color: "white", // Text color set to white
+  fontSize: "3rem",
+  color: "white",
+  textAlign: "center",
+  marginBottom: "10rem",
 });
 
 function Home() {
@@ -38,7 +39,7 @@ function Home() {
 
   return (
     <BannerContainer>
-      <RotatingText variant="h1" align="center">
+      <RotatingText variant="h1">
         <ReactRotatingText items={text} />
       </RotatingText>
     </BannerContainer>
