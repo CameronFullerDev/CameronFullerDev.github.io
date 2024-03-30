@@ -1,18 +1,15 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { summary } from "../../data/summary";
+import SmallSection from "./SmallSection";
 import Socials from "./Socials";
 
 export default function Summary() {
   return (
-    <Box>
-      <Typography gutterBottom component="h3" variant="h6">
-        Get to know me!
-      </Typography>
+    <SmallSection title="Get to know me!">
       <Typography gutterBottom component="p" color="text.secondary">
         {summary}
       </Typography>
-
       <Socials />
-    </Box>
+    </SmallSection>
   );
 }

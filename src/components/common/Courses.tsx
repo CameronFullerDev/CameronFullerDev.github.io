@@ -1,25 +1,11 @@
-import { Box, Chip, Stack, Typography } from "@mui/material";
 import { courses } from "../../data/courses";
+import Chips from "./Chips";
+import SmallSection from "./SmallSection";
 
-export default function Skills() {
+export default function Courses() {
   return (
-    <Box>
-      <Typography gutterBottom component="h3" variant="h6">
-        Courses
-      </Typography>
-      <Stack
-        direction="row"
-        flexWrap="wrap"
-        spacing={1}
-        useFlexGap
-        sx={{
-          color: "text.secondary",
-        }}
-      >
-        {courses.map((course, index) => (
-          <Chip key={index} label={course} />
-        ))}
-      </Stack>
-    </Box>
+    <SmallSection title="Courses">
+      <Chips chips={courses} />
+    </SmallSection>
   );
 }
