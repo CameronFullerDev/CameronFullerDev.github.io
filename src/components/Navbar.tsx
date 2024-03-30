@@ -12,6 +12,7 @@ import Toolbar from "@mui/material/Toolbar";
 import { useNavigate } from "react-router-dom";
 import DarkModeToggle from "./common/DarkModeToggle";
 import { Button } from "@mui/material";
+import NameCard from "./common/NameCard";
 
 const drawerWidth = 240;
 const navItems = [
@@ -29,7 +30,7 @@ const navItems = [
   },
 ];
 
-function Navbar() {
+export default function Navbar() {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -38,7 +39,18 @@ function Navbar() {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center", paddingTop: "1rem" }}
+    >
+      <Box
+        sx={{
+          borderBottom: "1px solid",
+          borderColor: "divider",
+        }}
+      >
+        <NameCard />
+      </Box>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
@@ -69,6 +81,10 @@ function Navbar() {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <NameCard />
+          </Box>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
                 color="secondary"
@@ -79,7 +95,6 @@ function Navbar() {
                 {item.name}
               </Button>
             ))}
-
             <DarkModeToggle />
           </Box>
         </Toolbar>
@@ -106,5 +121,3 @@ function Navbar() {
     </Box>
   );
 }
-
-export default Navbar;

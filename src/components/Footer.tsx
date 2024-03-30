@@ -1,18 +1,33 @@
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import SocialList from "./common/SocialList";
+import Container from "@mui/material/Container";
+import NameCard from "./common/NameCard";
+import Socials from "./common/Socials";
 
-function Footer() {
+export default function Footer() {
   return (
-    <Box sx={{ display: "flex" }}>
-      <AppBar component="nav" position="relative">
-        <Toolbar>
-          <SocialList />
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: { xs: 4, sm: 8 },
+        py: { xs: 8, sm: 10 },
+        textAlign: { sm: "center", md: "left" },
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          pt: { xs: 4, sm: 8 },
+          width: "100%",
+          borderTop: "1px solid",
+          borderColor: "divider",
+        }}
+      >
+        <NameCard />
+        <Socials />
+      </Box>
+    </Container>
   );
 }
-
-export default Footer;

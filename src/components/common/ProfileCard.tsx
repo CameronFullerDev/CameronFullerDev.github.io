@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import SocialList from "./SocialList";
+import Socials from "./Socials";
 import { shortSummary } from "../../data/summary";
 
 const ProfileCardWrapper = styled(Card)({
@@ -26,7 +26,7 @@ function ProfileCard() {
         <Typography variant="body1" component="p" gutterBottom>
           {shortSummary}
         </Typography>
-        <SocialList />
+        <Socials />
       </ProfileCardContent>
     </ProfileCardWrapper>
   );

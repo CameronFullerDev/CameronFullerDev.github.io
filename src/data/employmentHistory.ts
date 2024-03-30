@@ -1,4 +1,4 @@
-const experiences = [
+const employmentHistory = [
   {
     title: "Senior Lead Software Engineer",
     company: "One Beyond Ltd",
@@ -76,4 +76,4 @@ const experiences = [
   },
 ];
 
-export { experiences };
+export { employmentHistory };
