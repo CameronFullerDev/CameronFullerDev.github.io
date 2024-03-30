@@ -23,9 +23,7 @@ export default function EmploymentTimeline() {
             {index < employmentHistory.length - 1 && <TimelineConnector />}
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h6" component="h1">
-              {experience.title}
-            </Typography>
+            <Typography variant="h6">{experience.title}</Typography>
             <Typography variant="subtitle1">{experience.company}</Typography>
             <Typography>{experience.location}</Typography>
           </TimelineContent>

@@ -26,7 +26,7 @@ export default function Section({
     >
       <Box
         sx={{
-          width: { sm: "100%", md: "50%" },
+          width: { sm: "100%", md: "60%" },
           textAlign: { sm: "left", md: "center" },
         }}
       >

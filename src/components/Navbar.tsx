@@ -10,25 +10,12 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import { useNavigate } from "react-router-dom";
-import DarkModeToggle from "./common/DarkModeToggle";
+import ThemeToggle from "./common/ThemeToggle";
 import { Button } from "@mui/material";
 import NameCard from "./common/NameCard";
+import { routes } from "../routes";
 
 const drawerWidth = 240;
-const navItems = [
-  {
-    name: "Home",
-    route: "",
-  },
-  {
-    name: "About",
-    route: "/about",
-  },
-  {
-    name: "Portfolio",
-    route: "/portfolio",
-  },
-];
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -52,17 +39,18 @@ export default function Navbar() {
         <NameCard />
       </Box>
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item.name} disablePadding>
+        {routes.map((route) => (
+          <ListItem key={route.name} disablePadding>
             <ListItemButton
+              aria-label={route.name}
               sx={{ textAlign: "center" }}
-              onClick={() => navigate(item.route)}
+              onClick={() => navigate(route.route)}
             >
-              <ListItemText primary={item.name} />
+              <ListItemText primary={route.name} />
             </ListItemButton>
           </ListItem>
         ))}
-        <DarkModeToggle />
+        <ThemeToggle />
       </List>
     </Box>
   );
@@ -78,24 +66,25 @@ export default function Navbar() {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <MenuIcon aria-label="Menu" />
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <NameCard />
           </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
+            {routes.map((route) => (
               <Button
                 color="secondary"
                 variant="text"
-                key={item.name}
-                onClick={() => navigate(item.route)}
+                aria-label={route.name}
+                key={route.name}
+                onClick={() => navigate(route.route)}
               >
-                {item.name}
+                {route.name}
               </Button>
             ))}
-            <DarkModeToggle />
+            <ThemeToggle />
           </Box>
         </Toolbar>
       </AppBar>
