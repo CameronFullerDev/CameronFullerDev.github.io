@@ -12,7 +12,6 @@ const projects = [
     description:
       "Clinical Practice Research Datalink (CPRD) is a real-world research service supporting retrospective and prospective public health and clinical studies. CPRD research data services are delivered by the Medicines and Healthcare products Regulatory Agency with support from the National Institute for Health and Care Research (NIHR), as part of the Department of Health and Social Care.",
     urls: [
-      "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency",
       "https://www.cprd.com",
     ],
   },
@@ -44,7 +43,6 @@ const projects = [
       "Numerous is a free app that helps you control your personal data, use it to make money and find great deals from brands.",
     urls: [
       "https://www.numerous.app/",
-      "https://play.google.com/store/apps/details?id=com.numerous.yoy",
     ],
   },
   {
@@ -67,7 +65,6 @@ const projects = [
     description:
       "This webapp was created using React JS, it's hosted with github pages. It showcases expertise in software engineering and innovation.",
     urls: [
-      "https://github.com/CameronFullerDev/CameronFullerDev.github.io",
       "https://cameron-fuller.com",
     ],
   },
