@@ -1,7 +1,7 @@
 import { Card, CardContent, Typography, CardHeader } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
-import ShareIcon from '@mui/icons-material/Share';
+import ShareIcon from "@mui/icons-material/Share";
 import CardActions from "@mui/material/CardActions";
 
 interface Project {
