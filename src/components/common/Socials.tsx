@@ -12,12 +12,12 @@ export default function Socials() {
   const email = "cameron-fuller@hotmail.com";
   const whatsappUrl = "https://wa.me/+447539250603";
 
-  const handleDownload = () => {
+  function handleDownload() {
     const link = document.createElement("a");
     link.href = require("../../assets/cameron-fuller-cv.pdf");
     link.download = "cameron-fuller-cv.pdf";
     link.click();
-  };
+  }
 
   return (
     <Stack
@@ -30,16 +30,16 @@ export default function Socials() {
       }}
     >
       <IconButton onClick={() => openUrlInNewTab(linkedInUrl)}>
-        <LinkedInIcon />
+        <LinkedInIcon aria-label="LinkedIn" />
       </IconButton>
       <IconButton onClick={() => openMailUrl(email)}>
-        <EmailIcon />
+        <EmailIcon aria-label="Email" />
       </IconButton>
       <IconButton onClick={() => openUrl(whatsappUrl)}>
-        <WhatsAppIcon />
+        <WhatsAppIcon aria-label="Whatsapp" />
       </IconButton>
       <IconButton onClick={handleDownload}>
-        <DownloadIcon />
+        <DownloadIcon aria-label="Download my CV" />
       </IconButton>
     </Stack>
   );

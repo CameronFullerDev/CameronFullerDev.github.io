@@ -42,6 +42,7 @@ export default function Navbar() {
         {routes.map((route) => (
           <ListItem key={route.name} disablePadding>
             <ListItemButton
+              aria-label={route.name}
               sx={{ textAlign: "center" }}
               onClick={() => navigate(route.route)}
             >
@@ -65,7 +66,7 @@ export default function Navbar() {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <MenuIcon aria-label="Menu" />
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <NameCard />
@@ -76,6 +77,7 @@ export default function Navbar() {
               <Button
                 color="secondary"
                 variant="text"
+                aria-label={route.name}
                 key={route.name}
                 onClick={() => navigate(route.route)}
               >
