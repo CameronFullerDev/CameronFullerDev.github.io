@@ -6,3 +6,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.home-hero,
+.home-hero-dark {
+  background-position-x: 0%, 0%;
+  background-position-y: 0%, 0%;
+  background-position: center;
+  height: 100vh;
+  min-height: 10rem;
+  max-height: 80rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.home-hero {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(./assets/hero-background.svg);
+}
+
+.home-hero-dark {
+  background: linear-gradient(
+      to right,
+      rgba(38, 38, 38, 0.8),
+      rgba(38, 38, 38, 0.8)
+    ),
+    url(./assets/hero-background.svg);
+}

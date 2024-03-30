@@ -1,26 +1,31 @@
-import { styled } from "@mui/system";
 import { Grid } from "@mui/material";
-import ProfileCard from "./common/ProfileCard";
-import Profile from "./common/Profile";
+import Courses from "./common/Courses";
+import Qualifications from "./common/Qualifications";
+import Section from "./common/Section";
+import Skills from "./common/Skills";
+import Summary from "./common/Summary";
 
-const GridStyled = styled(Grid)({
-  marginTop: "1rem",
-  display: "flex",
-  justifyContent: "center", // Center content horizontally
-  alignItems: "center", // Center content vertically
-});
-
-export function About() {
+export default function About() {
   return (
-    <GridStyled container spacing={1}>
-      {/* <Grid item xs={12} sm={3} md={2}>
-        <ProfileCard />
-      </Grid> */}
-      <Grid item xs={12} sm={6} md={9}>
-        <Profile />
+    <Section
+      title="About Me"
+      description="Here you will find more information about me, what I do, and my
+current skills mostly in terms of programming and technology."
+    >
+      <Grid container spacing={2} sx={{ justifyContent: "center" }}>
+        <Grid item xs={12} sm={6} md={6}>
+          <Summary />
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <Skills />
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <Courses />
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <Qualifications />
+        </Grid>
       </Grid>
-    </GridStyled>
+    </Section>
   );
 }
-
-export default About;

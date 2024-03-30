@@ -24,6 +24,13 @@ const projects = [
     urls: ["https://www.hdrinc.com"],
   },
   {
+    img: require("../assets/waterscan-logo.png"),
+    title: "Waterscan",
+    description:
+      "Waterscan is a pioneering company based in the United Kingdom, specializing in water management and sustainability solutions. With a steadfast commitment to environmental stewardship and resource efficiency, Waterscan has established itself as a leader in the field, offering innovative strategies to optimize water usage across various industries.",
+    urls: ["https://waterscan.com/"],
+  },
+  {
     img: require("../assets/nhs-logo.png"),
     title: "BSPS | NHS",
     description:
