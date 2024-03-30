@@ -60,13 +60,13 @@ export default function Navbar() {
       <AppBar component="nav" position="sticky">
         <Toolbar>
           <IconButton
+            aria-label="Menu"
             color="inherit"
-            aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon aria-label="Menu" />
+            <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <NameCard />
