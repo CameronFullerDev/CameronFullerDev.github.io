@@ -29,17 +29,17 @@ export default function Socials() {
         color: "text.secondary",
       }}
     >
-      <IconButton onClick={() => openUrlInNewTab(linkedInUrl)}>
-        <LinkedInIcon aria-label="LinkedIn" />
+      <IconButton aria-label="LinkedIn"  onClick={() => openUrlInNewTab(linkedInUrl)}>
+        <LinkedInIcon />
       </IconButton>
-      <IconButton onClick={() => openMailUrl(email)}>
-        <EmailIcon aria-label="Email" />
+      <IconButton aria-label="Email"  onClick={() => openMailUrl(email)}>
+        <EmailIcon />
       </IconButton>
-      <IconButton onClick={() => openUrl(whatsappUrl)}>
-        <WhatsAppIcon aria-label="Whatsapp" />
+      <IconButton aria-label="Whatsapp" onClick={() => openUrl(whatsappUrl)}>
+        <WhatsAppIcon />
       </IconButton>
-      <IconButton onClick={handleDownload}>
-        <DownloadIcon aria-label="Download my CV" />
+      <IconButton aria-label="Download my CV" onClick={handleDownload}>
+        <DownloadIcon />
       </IconButton>
     </Stack>
   );

@@ -10,9 +10,9 @@ export default function ThemeToggle() {
   const colorMode = useContext(ColourModeContext);
   const icon =
     theme.palette.mode === "dark" ? (
-      <LightMode aria-label={theme.palette.mode} />
+      <LightMode />
     ) : (
-      <DarkMode aria-label={theme.palette.mode} />
+      <DarkMode />
     );
 
   return (
