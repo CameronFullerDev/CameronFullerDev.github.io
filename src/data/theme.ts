@@ -33,22 +33,22 @@ const darkColors = {
 
 const lightTypography = {
   h1: {
-    color: blue[500],
+    color: blue[900],
   },
   h2: {
-    color: blue[500],
+    color: blue[900],
   },
   h3: {
-    color: blue[500],
+    color: blue[900],
   },
   h4: {
-    color: blue[500],
+    color: blue[900],
   },
   h5: {
-    color: blue[500],
+    color: blue[900],
   },
   h6: {
-    color: blue[500],
+    color: blue[900],
   },
 };
 
