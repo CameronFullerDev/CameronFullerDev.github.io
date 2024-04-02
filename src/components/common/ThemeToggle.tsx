@@ -8,12 +8,7 @@ import ColourModeContext from "../../contexts/ColourModeContext";
 export default function ThemeToggle() {
   const theme = useTheme();
   const colorMode = useContext(ColourModeContext);
-  const icon =
-    theme.palette.mode === "dark" ? (
-      <LightMode />
-    ) : (
-      <DarkMode />
-    );
+  const icon = theme.palette.mode === "dark" ? <LightMode /> : <DarkMode />;
 
   return (
     <IconButton aria-label="Toggle theme" onClick={colorMode.toggleColorMode}>
