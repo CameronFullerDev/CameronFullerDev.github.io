@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <Section
       title="Projects"
-      description="Here you will find some of the personal and clients projects that I
+      description="Here you will find some of the projects that I
 have worked on or am currently working on."
     >
       <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>

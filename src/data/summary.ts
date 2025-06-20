@@ -1,6 +1,9 @@
 const shortSummary =
-  "Experienced software engineer with expertise in development using .NET, Vue JS, and Azure.";
+  "Software engineer with expertise in .NET microservices, cloud platforms (Azure/AWS), and scalable backend systems.";
 
-const summary = `${shortSummary} Passionate about solving complex problems and delivering efficient, user-centric software solutions. Always seeking new opportunities for personal development and to make a difference in the companies I work for.`;
+const summary = `${shortSummary} Passionate about building resilient, cloud-native applications and solving complex technical challenges. Committed to continuous improvement and delivering impactful, high-quality software for forward-thinking teams.`;
 
-export { shortSummary, summary };
+const areasOfInterest =
+  "Currently focused on distributed systems, event-driven microservices, and infrastructure as code with Terraform. I enjoy clean architecture, mentoring, and working at the intersection of software and cloud.";
+
+export { shortSummary, summary, areasOfInterest };

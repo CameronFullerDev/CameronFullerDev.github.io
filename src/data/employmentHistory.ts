@@ -1,5 +1,19 @@
 const employmentHistory = [
   {
+    title: "Senior .NET Developer",
+    company: "Global",
+    location: "London, England, United Kingdom (Hybrid)",
+    duration: "July 2024 - Present",
+    responsibilities: [
+      "Modernise and support legacy .NET-based Radio systems, reducing technical debt and improving system reliability, scalability, and maintainability.",
+      "Design and implement cloud-native microservices with .NET Core, deployed via Kubernetes on AWS (EKS, Lambda, API Gateway, S3, RDS) to replace monolithic architecture.",
+      "Provision and manage cloud infrastructure using Terraform, enabling consistent, version-controlled deployments across multiple environments.",
+      "Work closely with product and engineering stakeholders to define architecture, align technical efforts with business goals, and drive end-to-end project delivery.",
+      "Champion engineering excellence through mentoring, pair programming, and establishing best practices for microservices, DevOps, and container orchestration.",
+      "Lead code reviews and contribute to continuous delivery pipelines, improving deployment velocity and code quality across the team.",
+    ],
+  },
+  {
     title: "Senior Lead Software Engineer",
     company: "One Beyond Ltd",
     location: "London, England, United Kingdom (Remote)",
