@@ -5,7 +5,7 @@ const courses = [
   "MCSA Database fundamentals",
   "Microsoft Advanced Programming in C#",
   "TQUK - Principles of team leading",
-  "Multiple Twilio superclasses",
+  "Manager Spark Training",
 ];
 
 export { courses };
